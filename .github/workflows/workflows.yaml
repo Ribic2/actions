@@ -5,4 +5,4 @@ jobs:
  check-bats-version:
     runs-on: ubuntu-latest
     steps:
-      - run: echo ${{ github.actor }}
+      - run: echo ${{ GITHUB_REF#refs/heads/ }}
